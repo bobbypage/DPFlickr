@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		638745C91370C66300D3B103 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638745C81370C66300D3B103 /* UIKit.framework */; };
+		638745CB1370C66300D3B103 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638745CA1370C66300D3B103 /* Foundation.framework */; };
+		638745CD1370C66300D3B103 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638745CC1370C66300D3B103 /* CoreGraphics.framework */; };
+		638745D31370C66300D3B103 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 638745D11370C66300D3B103 /* InfoPlist.strings */; };
+		638745D61370C66300D3B103 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 638745D51370C66300D3B103 /* main.m */; };
+		638745D91370C66300D3B103 /* PhotoUploaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 638745D81370C66300D3B103 /* PhotoUploaderAppDelegate.m */; };
+		638745DC1370C66300D3B103 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638745DA1370C66300D3B103 /* MainWindow.xib */; };
+		638745DF1370C66300D3B103 /* PhotoUploaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638745DE1370C66300D3B103 /* PhotoUploaderViewController.m */; };
+		638745E21370C66300D3B103 /* PhotoUploaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638745E01370C66300D3B103 /* PhotoUploaderViewController.xib */; };
+		638746DF1370C6AD00D3B103 /* DPFlickrAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 638745EA1370C6AD00D3B103 /* DPFlickrAuthorization.m */; };
+		638746E01370C6AD00D3B103 /* DPFlickrManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 638745EC1370C6AD00D3B103 /* DPFlickrManager.m */; };
+		638747571370C6AD00D3B103 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 638746CF1370C6AD00D3B103 /* SFHFKeychainUtils.m */; };
+		638747811370C6E700D3B103 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638747801370C6E700D3B103 /* Security.framework */; };
+		638747831370C6EE00D3B103 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638747821370C6EE00D3B103 /* CFNetwork.framework */; };
+		638747851370C6F500D3B103 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638747841370C6F500D3B103 /* MobileCoreServices.framework */; };
+		638747871370C70700D3B103 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 638747861370C70700D3B103 /* libxml2.dylib */; };
+		638747891370C70F00D3B103 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 638747881370C70F00D3B103 /* libz.1.2.3.dylib */; };
+		6387478E1370C83300D3B103 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387478D1370C83300D3B103 /* MBProgressHUD.m */; };
+		638747921370C8F300D3B103 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 638747911370C8F300D3B103 /* Reachability.m */; };
+		638747A71370C90300D3B103 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 638747941370C90300D3B103 /* ASIAuthenticationDialog.m */; };
+		638747A81370C90300D3B103 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 638747971370C90300D3B103 /* ASIDataCompressor.m */; };
+		638747A91370C90300D3B103 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 638747991370C90300D3B103 /* ASIDataDecompressor.m */; };
+		638747AA1370C90300D3B103 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387479B1370C90300D3B103 /* ASIDownloadCache.m */; };
+		638747AB1370C90300D3B103 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387479D1370C90300D3B103 /* ASIFormDataRequest.m */; };
+		638747AC1370C90300D3B103 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387479F1370C90300D3B103 /* ASIHTTPRequest.m */; };
+		638747AD1370C90300D3B103 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 638747A31370C90300D3B103 /* ASIInputStream.m */; };
+		638747AE1370C90300D3B103 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 638747A51370C90300D3B103 /* ASINetworkQueue.m */; };
+		638747B01370C96700D3B103 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638747AF1370C96700D3B103 /* SystemConfiguration.framework */; };
+		638747B21370CF2B00D3B103 /* DPFlickrAuthorization.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638747B11370CF2B00D3B103 /* DPFlickrAuthorization.xib */; };
+		638747B41370D42D00D3B103 /* me-gusta.png in Resources */ = {isa = PBXBuildFile; fileRef = 638747B31370D42D00D3B103 /* me-gusta.png */; };
+		63936BDD13738BEC000DECCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 638745D51370C66300D3B103 /* main.m */; };
+		63936BDE13738BEC000DECCA /* PhotoUploaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 638745D81370C66300D3B103 /* PhotoUploaderAppDelegate.m */; };
+		63936BDF13738BEC000DECCA /* PhotoUploaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638745DE1370C66300D3B103 /* PhotoUploaderViewController.m */; };
+		63936BE013738BEC000DECCA /* DPFlickrAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 638745EA1370C6AD00D3B103 /* DPFlickrAuthorization.m */; };
+		63936BE113738BEC000DECCA /* DPFlickrManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 638745EC1370C6AD00D3B103 /* DPFlickrManager.m */; };
+		63936BE213738BEC000DECCA /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 638746CF1370C6AD00D3B103 /* SFHFKeychainUtils.m */; };
+		63936BE313738BEC000DECCA /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387478D1370C83300D3B103 /* MBProgressHUD.m */; };
+		63936BE413738BEC000DECCA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 638747911370C8F300D3B103 /* Reachability.m */; };
+		63936BE513738BEC000DECCA /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 638747941370C90300D3B103 /* ASIAuthenticationDialog.m */; };
+		63936BE613738BEC000DECCA /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 638747971370C90300D3B103 /* ASIDataCompressor.m */; };
+		63936BE713738BEC000DECCA /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 638747991370C90300D3B103 /* ASIDataDecompressor.m */; };
+		63936BE813738BEC000DECCA /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387479B1370C90300D3B103 /* ASIDownloadCache.m */; };
+		63936BE913738BEC000DECCA /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387479D1370C90300D3B103 /* ASIFormDataRequest.m */; };
+		63936BEA13738BEC000DECCA /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387479F1370C90300D3B103 /* ASIHTTPRequest.m */; };
+		63936BEB13738BEC000DECCA /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 638747A31370C90300D3B103 /* ASIInputStream.m */; };
+		63936BEC13738BEC000DECCA /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 638747A51370C90300D3B103 /* ASINetworkQueue.m */; };
+		63936BEE13738BEC000DECCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638745C81370C66300D3B103 /* UIKit.framework */; };
+		63936BEF13738BEC000DECCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638745CA1370C66300D3B103 /* Foundation.framework */; };
+		63936BF013738BEC000DECCA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638745CC1370C66300D3B103 /* CoreGraphics.framework */; };
+		63936BF113738BEC000DECCA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638747AF1370C96700D3B103 /* SystemConfiguration.framework */; };
+		63936BF213738BEC000DECCA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638747841370C6F500D3B103 /* MobileCoreServices.framework */; };
+		63936BF313738BEC000DECCA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638747821370C6EE00D3B103 /* CFNetwork.framework */; };
+		63936BF413738BEC000DECCA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638747801370C6E700D3B103 /* Security.framework */; };
+		63936BF513738BEC000DECCA /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 638747881370C70F00D3B103 /* libz.1.2.3.dylib */; };
+		63936BF613738BEC000DECCA /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 638747861370C70700D3B103 /* libxml2.dylib */; };
+		63936BF813738BEC000DECCA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 638745D11370C66300D3B103 /* InfoPlist.strings */; };
+		63936BFC13738BEC000DECCA /* me-gusta.png in Resources */ = {isa = PBXBuildFile; fileRef = 638747B31370D42D00D3B103 /* me-gusta.png */; };
+		63936C0913738BF1000DECCA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63936C0413738BF1000DECCA /* MainWindow.xib */; };
+		63936C0A13738BF1000DECCA /* PhotoUploaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63936C0613738BF1000DECCA /* PhotoUploaderViewController.xib */; };
+		63936C0B13738BF1000DECCA /* DPFlickrAuthorization.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63936C0813738BF1000DECCA /* DPFlickrAuthorization.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		638745C41370C66300D3B103 /* PhotoUploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoUploader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		638745C81370C66300D3B103 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		638745CA1370C66300D3B103 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		638745CC1370C66300D3B103 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		638745D01370C66300D3B103 /* PhotoUploader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoUploader-Info.plist"; sourceTree = "<group>"; };
+		638745D21370C66300D3B103 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		638745D41370C66300D3B103 /* PhotoUploader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoUploader-Prefix.pch"; sourceTree = "<group>"; };
+		638745D51370C66300D3B103 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		638745D71370C66300D3B103 /* PhotoUploaderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoUploaderAppDelegate.h; sourceTree = "<group>"; };
+		638745D81370C66300D3B103 /* PhotoUploaderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoUploaderAppDelegate.m; sourceTree = "<group>"; };
+		638745DB1370C66300D3B103 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		638745DD1370C66300D3B103 /* PhotoUploaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoUploaderViewController.h; sourceTree = "<group>"; };
+		638745DE1370C66300D3B103 /* PhotoUploaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoUploaderViewController.m; sourceTree = "<group>"; };
+		638745E11370C66300D3B103 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PhotoUploaderViewController.xib; sourceTree = "<group>"; };
+		638745E91370C6AD00D3B103 /* DPFlickrAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPFlickrAuthorization.h; sourceTree = "<group>"; };
+		638745EA1370C6AD00D3B103 /* DPFlickrAuthorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPFlickrAuthorization.m; sourceTree = "<group>"; };
+		638745EB1370C6AD00D3B103 /* DPFlickrManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPFlickrManager.h; sourceTree = "<group>"; };
+		638745EC1370C6AD00D3B103 /* DPFlickrManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPFlickrManager.m; sourceTree = "<group>"; };
+		638746CE1370C6AD00D3B103 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		638746CF1370C6AD00D3B103 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		638747801370C6E700D3B103 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		638747821370C6EE00D3B103 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		638747841370C6F500D3B103 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		638747861370C70700D3B103 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		638747881370C70F00D3B103 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		6387478C1370C83300D3B103 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		6387478D1370C83300D3B103 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
+		638747901370C8F300D3B103 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		638747911370C8F300D3B103 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		638747931370C90300D3B103 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = ../ASIHTTPRequest/Classes/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		638747941370C90300D3B103 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = ../ASIHTTPRequest/Classes/ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		638747951370C90300D3B103 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = ../ASIHTTPRequest/Classes/ASICacheDelegate.h; sourceTree = "<group>"; };
+		638747961370C90300D3B103 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = ../ASIHTTPRequest/Classes/ASIDataCompressor.h; sourceTree = "<group>"; };
+		638747971370C90300D3B103 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = ../ASIHTTPRequest/Classes/ASIDataCompressor.m; sourceTree = "<group>"; };
+		638747981370C90300D3B103 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataDecompressor.h; path = ../ASIHTTPRequest/Classes/ASIDataDecompressor.h; sourceTree = "<group>"; };
+		638747991370C90300D3B103 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataDecompressor.m; path = ../ASIHTTPRequest/Classes/ASIDataDecompressor.m; sourceTree = "<group>"; };
+		6387479A1370C90300D3B103 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = ../ASIHTTPRequest/Classes/ASIDownloadCache.h; sourceTree = "<group>"; };
+		6387479B1370C90300D3B103 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = ../ASIHTTPRequest/Classes/ASIDownloadCache.m; sourceTree = "<group>"; };
+		6387479C1370C90300D3B103 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = ../ASIHTTPRequest/Classes/ASIFormDataRequest.h; sourceTree = "<group>"; };
+		6387479D1370C90300D3B103 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = ../ASIHTTPRequest/Classes/ASIFormDataRequest.m; sourceTree = "<group>"; };
+		6387479E1370C90300D3B103 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = ../ASIHTTPRequest/Classes/ASIHTTPRequest.h; sourceTree = "<group>"; };
+		6387479F1370C90300D3B103 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = ../ASIHTTPRequest/Classes/ASIHTTPRequest.m; sourceTree = "<group>"; };
+		638747A01370C90300D3B103 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = ../ASIHTTPRequest/Classes/ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		638747A11370C90300D3B103 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = ../ASIHTTPRequest/Classes/ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		638747A21370C90300D3B103 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = ../ASIHTTPRequest/Classes/ASIInputStream.h; sourceTree = "<group>"; };
+		638747A31370C90300D3B103 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = ../ASIHTTPRequest/Classes/ASIInputStream.m; sourceTree = "<group>"; };
+		638747A41370C90300D3B103 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = ../ASIHTTPRequest/Classes/ASINetworkQueue.h; sourceTree = "<group>"; };
+		638747A51370C90300D3B103 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = ../ASIHTTPRequest/Classes/ASINetworkQueue.m; sourceTree = "<group>"; };
+		638747A61370C90300D3B103 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = ../ASIHTTPRequest/Classes/ASIProgressDelegate.h; sourceTree = "<group>"; };
+		638747AF1370C96700D3B103 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		638747B11370CF2B00D3B103 /* DPFlickrAuthorization.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPFlickrAuthorization.xib; sourceTree = "<group>"; };
+		638747B31370D42D00D3B103 /* me-gusta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me-gusta.png"; sourceTree = "<group>"; };
+		63936C0013738BEC000DECCA /* PhotoUploader-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PhotoUploader-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63936C0513738BF1000DECCA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "Resources-iPad/PhotoUploader/en.lproj/MainWindow.xib"; sourceTree = "<group>"; };
+		63936C0713738BF1000DECCA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "Resources-iPad/PhotoUploader/en.lproj/PhotoUploaderViewController.xib"; sourceTree = "<group>"; };
+		63936C0813738BF1000DECCA /* DPFlickrAuthorization.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DPFlickrAuthorization.xib; path = ../DPFlickrFiles/DPFlickrAuthorization.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		638745C11370C66300D3B103 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638745C91370C66300D3B103 /* UIKit.framework in Frameworks */,
+				638745CB1370C66300D3B103 /* Foundation.framework in Frameworks */,
+				638745CD1370C66300D3B103 /* CoreGraphics.framework in Frameworks */,
+				638747B01370C96700D3B103 /* SystemConfiguration.framework in Frameworks */,
+				638747851370C6F500D3B103 /* MobileCoreServices.framework in Frameworks */,
+				638747831370C6EE00D3B103 /* CFNetwork.framework in Frameworks */,
+				638747811370C6E700D3B103 /* Security.framework in Frameworks */,
+				638747891370C70F00D3B103 /* libz.1.2.3.dylib in Frameworks */,
+				638747871370C70700D3B103 /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63936BED13738BEC000DECCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63936BEE13738BEC000DECCA /* UIKit.framework in Frameworks */,
+				63936BEF13738BEC000DECCA /* Foundation.framework in Frameworks */,
+				63936BF013738BEC000DECCA /* CoreGraphics.framework in Frameworks */,
+				63936BF113738BEC000DECCA /* SystemConfiguration.framework in Frameworks */,
+				63936BF213738BEC000DECCA /* MobileCoreServices.framework in Frameworks */,
+				63936BF313738BEC000DECCA /* CFNetwork.framework in Frameworks */,
+				63936BF413738BEC000DECCA /* Security.framework in Frameworks */,
+				63936BF513738BEC000DECCA /* libz.1.2.3.dylib in Frameworks */,
+				63936BF613738BEC000DECCA /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		638745B91370C66300D3B103 = {
+			isa = PBXGroup;
+			children = (
+				63936C0213738BEC000DECCA /* Resources-iPad */,
+				638745E81370C6AD00D3B103 /* DPFlickrFiles */,
+				638745CE1370C66300D3B103 /* PhotoUploader */,
+				638745C71370C66300D3B103 /* Frameworks */,
+				638745C51370C66300D3B103 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		638745C51370C66300D3B103 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				638745C41370C66300D3B103 /* PhotoUploader.app */,
+				63936C0013738BEC000DECCA /* PhotoUploader-iPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		638745C71370C66300D3B103 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				638747881370C70F00D3B103 /* libz.1.2.3.dylib */,
+				638747861370C70700D3B103 /* libxml2.dylib */,
+				638747AF1370C96700D3B103 /* SystemConfiguration.framework */,
+				638747841370C6F500D3B103 /* MobileCoreServices.framework */,
+				638747821370C6EE00D3B103 /* CFNetwork.framework */,
+				638747801370C6E700D3B103 /* Security.framework */,
+				638745C81370C66300D3B103 /* UIKit.framework */,
+				638745CA1370C66300D3B103 /* Foundation.framework */,
+				638745CC1370C66300D3B103 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		638745CE1370C66300D3B103 /* PhotoUploader */ = {
+			isa = PBXGroup;
+			children = (
+				638747B31370D42D00D3B103 /* me-gusta.png */,
+				638745D71370C66300D3B103 /* PhotoUploaderAppDelegate.h */,
+				638745D81370C66300D3B103 /* PhotoUploaderAppDelegate.m */,
+				638745DA1370C66300D3B103 /* MainWindow.xib */,
+				638745DD1370C66300D3B103 /* PhotoUploaderViewController.h */,
+				638745DE1370C66300D3B103 /* PhotoUploaderViewController.m */,
+				638745E01370C66300D3B103 /* PhotoUploaderViewController.xib */,
+				638745CF1370C66300D3B103 /* Supporting Files */,
+			);
+			path = PhotoUploader;
+			sourceTree = "<group>";
+		};
+		638745CF1370C66300D3B103 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				638745D01370C66300D3B103 /* PhotoUploader-Info.plist */,
+				638745D11370C66300D3B103 /* InfoPlist.strings */,
+				638745D41370C66300D3B103 /* PhotoUploader-Prefix.pch */,
+				638745D51370C66300D3B103 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		638745E81370C6AD00D3B103 /* DPFlickrFiles */ = {
+			isa = PBXGroup;
+			children = (
+				638745EB1370C6AD00D3B103 /* DPFlickrManager.h */,
+				638745EC1370C6AD00D3B103 /* DPFlickrManager.m */,
+				63936C1F13738FC1000DECCA /* Backend & Libraries */,
+			);
+			name = DPFlickrFiles;
+			path = ../../DPFlickrFiles;
+			sourceTree = "<group>";
+		};
+		638746CD1370C6AD00D3B103 /* SFHFKeychainUtils */ = {
+			isa = PBXGroup;
+			children = (
+				638746CE1370C6AD00D3B103 /* SFHFKeychainUtils.h */,
+				638746CF1370C6AD00D3B103 /* SFHFKeychainUtils.m */,
+			);
+			name = SFHFKeychainUtils;
+			path = SFH;
+			sourceTree = "<group>";
+		};
+		6387478A1370C81900D3B103 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6387478C1370C83300D3B103 /* MBProgressHUD.h */,
+				6387478D1370C83300D3B103 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			path = SFH;
+			sourceTree = "<group>";
+		};
+		6387478B1370C81D00D3B103 /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				638747931370C90300D3B103 /* ASIAuthenticationDialog.h */,
+				638747941370C90300D3B103 /* ASIAuthenticationDialog.m */,
+				638747951370C90300D3B103 /* ASICacheDelegate.h */,
+				638747961370C90300D3B103 /* ASIDataCompressor.h */,
+				638747971370C90300D3B103 /* ASIDataCompressor.m */,
+				638747981370C90300D3B103 /* ASIDataDecompressor.h */,
+				638747991370C90300D3B103 /* ASIDataDecompressor.m */,
+				6387479A1370C90300D3B103 /* ASIDownloadCache.h */,
+				6387479B1370C90300D3B103 /* ASIDownloadCache.m */,
+				6387479C1370C90300D3B103 /* ASIFormDataRequest.h */,
+				6387479D1370C90300D3B103 /* ASIFormDataRequest.m */,
+				6387479E1370C90300D3B103 /* ASIHTTPRequest.h */,
+				6387479F1370C90300D3B103 /* ASIHTTPRequest.m */,
+				638747A01370C90300D3B103 /* ASIHTTPRequestConfig.h */,
+				638747A11370C90300D3B103 /* ASIHTTPRequestDelegate.h */,
+				638747A21370C90300D3B103 /* ASIInputStream.h */,
+				638747A31370C90300D3B103 /* ASIInputStream.m */,
+				638747A41370C90300D3B103 /* ASINetworkQueue.h */,
+				638747A51370C90300D3B103 /* ASINetworkQueue.m */,
+				638747A61370C90300D3B103 /* ASIProgressDelegate.h */,
+				6387478F1370C8F300D3B103 /* Reachability */,
+			);
+			name = ASIHTTPRequest;
+			path = SFH;
+			sourceTree = "<group>";
+		};
+		6387478F1370C8F300D3B103 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				638747901370C8F300D3B103 /* Reachability.h */,
+				638747911370C8F300D3B103 /* Reachability.m */,
+			);
+			name = Reachability;
+			path = ../ASIHTTPRequest/External/Reachability;
+			sourceTree = "<group>";
+		};
+		63936C0213738BEC000DECCA /* Resources-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				63936C0413738BF1000DECCA /* MainWindow.xib */,
+				63936C0613738BF1000DECCA /* PhotoUploaderViewController.xib */,
+				63936C0813738BF1000DECCA /* DPFlickrAuthorization.xib */,
+			);
+			name = "Resources-iPad";
+			sourceTree = "<group>";
+		};
+		63936C1F13738FC1000DECCA /* Backend & Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				638745E91370C6AD00D3B103 /* DPFlickrAuthorization.h */,
+				638745EA1370C6AD00D3B103 /* DPFlickrAuthorization.m */,
+				638747B11370CF2B00D3B103 /* DPFlickrAuthorization.xib */,
+				6387478B1370C81D00D3B103 /* ASIHTTPRequest */,
+				6387478A1370C81900D3B103 /* MBProgressHUD */,
+				638746CD1370C6AD00D3B103 /* SFHFKeychainUtils */,
+			);
+			name = "Backend & Libraries";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		638745C31370C66300D3B103 /* PhotoUploader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 638745E51370C66300D3B103 /* Build configuration list for PBXNativeTarget "PhotoUploader" */;
+			buildPhases = (
+				638745C01370C66300D3B103 /* Sources */,
+				638745C11370C66300D3B103 /* Frameworks */,
+				638745C21370C66300D3B103 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoUploader;
+			productName = PhotoUploader;
+			productReference = 638745C41370C66300D3B103 /* PhotoUploader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63936BDB13738BEC000DECCA /* PhotoUploader-iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63936BFD13738BEC000DECCA /* Build configuration list for PBXNativeTarget "PhotoUploader-iPad" */;
+			buildPhases = (
+				63936BDC13738BEC000DECCA /* Sources */,
+				63936BED13738BEC000DECCA /* Frameworks */,
+				63936BF713738BEC000DECCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PhotoUploader-iPad";
+			productName = PhotoUploader;
+			productReference = 63936C0013738BEC000DECCA /* PhotoUploader-iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		638745BB1370C66300D3B103 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "David Porter Apps";
+			};
+			buildConfigurationList = 638745BE1370C66300D3B103 /* Build configuration list for PBXProject "PhotoUploader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 638745B91370C66300D3B103;
+			productRefGroup = 638745C51370C66300D3B103 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				638745C31370C66300D3B103 /* PhotoUploader */,
+				63936BDB13738BEC000DECCA /* PhotoUploader-iPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		638745C21370C66300D3B103 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638745D31370C66300D3B103 /* InfoPlist.strings in Resources */,
+				638745DC1370C66300D3B103 /* MainWindow.xib in Resources */,
+				638745E21370C66300D3B103 /* PhotoUploaderViewController.xib in Resources */,
+				638747B21370CF2B00D3B103 /* DPFlickrAuthorization.xib in Resources */,
+				638747B41370D42D00D3B103 /* me-gusta.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63936BF713738BEC000DECCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63936BF813738BEC000DECCA /* InfoPlist.strings in Resources */,
+				63936BFC13738BEC000DECCA /* me-gusta.png in Resources */,
+				63936C0913738BF1000DECCA /* MainWindow.xib in Resources */,
+				63936C0A13738BF1000DECCA /* PhotoUploaderViewController.xib in Resources */,
+				63936C0B13738BF1000DECCA /* DPFlickrAuthorization.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		638745C01370C66300D3B103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638745D61370C66300D3B103 /* main.m in Sources */,
+				638745D91370C66300D3B103 /* PhotoUploaderAppDelegate.m in Sources */,
+				638745DF1370C66300D3B103 /* PhotoUploaderViewController.m in Sources */,
+				638746DF1370C6AD00D3B103 /* DPFlickrAuthorization.m in Sources */,
+				638746E01370C6AD00D3B103 /* DPFlickrManager.m in Sources */,
+				638747571370C6AD00D3B103 /* SFHFKeychainUtils.m in Sources */,
+				6387478E1370C83300D3B103 /* MBProgressHUD.m in Sources */,
+				638747921370C8F300D3B103 /* Reachability.m in Sources */,
+				638747A71370C90300D3B103 /* ASIAuthenticationDialog.m in Sources */,
+				638747A81370C90300D3B103 /* ASIDataCompressor.m in Sources */,
+				638747A91370C90300D3B103 /* ASIDataDecompressor.m in Sources */,
+				638747AA1370C90300D3B103 /* ASIDownloadCache.m in Sources */,
+				638747AB1370C90300D3B103 /* ASIFormDataRequest.m in Sources */,
+				638747AC1370C90300D3B103 /* ASIHTTPRequest.m in Sources */,
+				638747AD1370C90300D3B103 /* ASIInputStream.m in Sources */,
+				638747AE1370C90300D3B103 /* ASINetworkQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63936BDC13738BEC000DECCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63936BDD13738BEC000DECCA /* main.m in Sources */,
+				63936BDE13738BEC000DECCA /* PhotoUploaderAppDelegate.m in Sources */,
+				63936BDF13738BEC000DECCA /* PhotoUploaderViewController.m in Sources */,
+				63936BE013738BEC000DECCA /* DPFlickrAuthorization.m in Sources */,
+				63936BE113738BEC000DECCA /* DPFlickrManager.m in Sources */,
+				63936BE213738BEC000DECCA /* SFHFKeychainUtils.m in Sources */,
+				63936BE313738BEC000DECCA /* MBProgressHUD.m in Sources */,
+				63936BE413738BEC000DECCA /* Reachability.m in Sources */,
+				63936BE513738BEC000DECCA /* ASIAuthenticationDialog.m in Sources */,
+				63936BE613738BEC000DECCA /* ASIDataCompressor.m in Sources */,
+				63936BE713738BEC000DECCA /* ASIDataDecompressor.m in Sources */,
+				63936BE813738BEC000DECCA /* ASIDownloadCache.m in Sources */,
+				63936BE913738BEC000DECCA /* ASIFormDataRequest.m in Sources */,
+				63936BEA13738BEC000DECCA /* ASIHTTPRequest.m in Sources */,
+				63936BEB13738BEC000DECCA /* ASIInputStream.m in Sources */,
+				63936BEC13738BEC000DECCA /* ASINetworkQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		638745D11370C66300D3B103 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				638745D21370C66300D3B103 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		638745DA1370C66300D3B103 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				638745DB1370C66300D3B103 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		638745E01370C66300D3B103 /* PhotoUploaderViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				638745E11370C66300D3B103 /* en */,
+			);
+			name = PhotoUploaderViewController.xib;
+			sourceTree = "<group>";
+		};
+		63936C0413738BF1000DECCA /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63936C0513738BF1000DECCA /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		63936C0613738BF1000DECCA /* PhotoUploaderViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63936C0713738BF1000DECCA /* en */,
+			);
+			name = PhotoUploaderViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		638745E31370C66300D3B103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		638745E41370C66300D3B103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		638745E61370C66300D3B103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoUploader/PhotoUploader-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "PhotoUploader/PhotoUploader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		638745E71370C66300D3B103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoUploader/PhotoUploader-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "PhotoUploader/PhotoUploader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		63936BFE13738BEC000DECCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoUploader/PhotoUploader-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "PhotoUploader/PhotoUploader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PRODUCT_NAME = "PhotoUploader-iPad";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		63936BFF13738BEC000DECCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoUploader/PhotoUploader-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "PhotoUploader/PhotoUploader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PRODUCT_NAME = "PhotoUploader-iPad";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		638745BE1370C66300D3B103 /* Build configuration list for PBXProject "PhotoUploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638745E31370C66300D3B103 /* Debug */,
+				638745E41370C66300D3B103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		638745E51370C66300D3B103 /* Build configuration list for PBXNativeTarget "PhotoUploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638745E61370C66300D3B103 /* Debug */,
+				638745E71370C66300D3B103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63936BFD13738BEC000DECCA /* Build configuration list for PBXNativeTarget "PhotoUploader-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63936BFE13738BEC000DECCA /* Debug */,
+				63936BFF13738BEC000DECCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 638745BB1370C66300D3B103 /* Project object */;
+}
