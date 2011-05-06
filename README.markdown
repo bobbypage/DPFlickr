@@ -80,9 +80,13 @@ Just remember to set DPFlickrManager's delegate to your .m or else you won't rec
 These are the possible delegate calls that you can implement:
 
 `- (void)loginSucceeded;`
+
 `- (void)loginFailed;`
+
 `- (void)imageUploadStarted;`
+
 `- (void)imageUploadFailed;`
+
 `- (void)imagePublished;`
 
 Now after the user has logged in, you can use a method like the one below to post a image to facebook.
@@ -104,6 +108,7 @@ Also, there are two different methods you can use to upload photos. One of them 
 
 These two methods are:
 `- (void)uploadImage:(UIImage *)image;`
+
 `- (void)uploadImage:(UIImage *)image withTitle:(NSString *)title withDescription:(NSString *)description;`
 
 So you're postPhotoMethod could also look something like this:
